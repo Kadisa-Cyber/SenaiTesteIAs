@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        /* Reset das margens e padding padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo do corpo da página */
+        body {
+            background-color: rgb(27, 28, 48);
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        /* Estilo da imagem */
+        .login-image {
+            display: block;
+            margin: 0 auto 20px auto; /* Centraliza a imagem e adiciona espaço abaixo */
+            border-radius: 50%; /* Torna a imagem redonda */
+            width: 120px; /* Tamanho da imagem */
+            height: 120px;
+        }
+
+        /* Estilo do container do formulário */
+        .login-container {
+            background-color: rgb(27, 28, 48); /* Cor de fundo do container */
+            padding: 20px;
+            border-radius: 8px;
+            width: 350px; /* Largura do container */
+            text-align: center; /* Centraliza o texto dentro do container */
+        }
+
+        /* Estilo do título "Login" */
+        .login-container h2 {
+            margin-bottom: 20px; /* Espaço abaixo do título */
+            font-size: 24px; /* Tamanho da fonte aumentado */
+        }
+
+        /* Estilo dos campos de entrada */
+        .login-container input {
+            width: 100%;
+            padding: 15px; /* Aumenta o padding para tornar os inputs maiores */
+            margin: 15px 0; /* Aumenta a margem para espaçamento */
+            border: none;
+            border-radius: 20px; /* Bordas arredondadas */
+            background-color: rgb(42, 43, 56); /* Cor de fundo dos inputs */
+            color: white;
+            font-size: 16px; /* Tamanho da fonte dos inputs */
+        }
+
+        /* Estilo do botão de entrar */
+        .login-container button {
+            width: 50%; /* Metade da largura dos inputs */
+            padding: 15px; /* Aumenta o padding para tornar o botão maior */
+            background-color: rgb(117, 199, 120);
+            border: none;
+            border-radius: 20px; /* Bordas arredondadas */
+            color: white;
+            font-size: 16px; /* Tamanho da fonte do botão */
+            cursor: pointer;
+            margin-top: 20px; /* Espaço acima do botão */
+        }
+
+        /* Estilo do link de criar conta */
+        .login-container a {
+            color: rgb(117, 199, 120);
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px; /* Tamanho da fonte do link */
+        }
+
+        /* Estilo da legenda */
+        .login-container p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px; /* Tamanho da fonte da legenda */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Imagem acima do container -->
+        <img src="https://secure.gravatar.com/blavatar/7db71b0ca89bb23855371a4b5d220f26f699c5eca4b5c9809d0ce06e30945a3d?s=240" alt="Login" class="login-image">
+        <!-- Título centralizado -->
+        <h2>Login</h2>
+        <!-- Campos de entrada -->
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <!-- Botão de entrar -->
+        <button type="submit">Entrar</button>
+        <!-- Legenda e link para criar conta -->
+        <p>Ainda não tem uma conta? <a href="#">Crie uma.</a></p>
+    </div>
+</body>
+</html>
